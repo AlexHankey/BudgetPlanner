@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Budget Planner</title>
 </head>
+<style>
+table, th, td {
+    border:1px solid black;
+  }
+  </style>
 <body>
 
     <h1>Budget Planner</h1>
@@ -17,11 +22,29 @@
 
     <label for="yearlyWage_Input">Yearly Wage</label>
     <input id="yearlyWage_Input" type="number" />
-    <button type="button" onclick="outputValues()">Submit</button>
+    <button type="button" onclick="displayTableContents()">Submit</button>
     
 
     <div id="output-yearly"></div>
     <div id="output-monthly"></div>
+
+
+    <table style="width:100%">
+        <tr>
+            <th>Yearly</th>
+            <th>Monthly</th>
+            <th>Weekly</th>
+            <th>Daily</th>
+            <th>Hourly</th>
+        </tr>
+        <tr>
+            <td id="Yearly"></td>
+            <td id="Monthly"></td>
+            <td id="Weekly"></td>
+            <td id="Daily"></td>
+            <td id="Hourly"></td>
+        </tr>
+    </table>
     
 </body>
 <script src="javascript/app.js"></script>
